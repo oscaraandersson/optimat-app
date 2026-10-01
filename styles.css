@@ -1,0 +1,236 @@
+:root {
+  --canvas: #F8F9FA;
+  --surface: #FFFFFF;
+  --muted: #F3F4F6;
+  --ink: #0B0D10;
+  --sage: #165C45;
+  --sage-soft: #DCEEE6;
+  --sage-dark: #0D3A2C;
+  --line: #EEF0F2;
+  --label: rgba(11, 13, 16, 0.55);
+  --meta: rgba(11, 13, 16, 0.42);
+  --shadow: 0 10px 40px rgba(11, 13, 16, 0.06);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, sans-serif;
+  background: var(--canvas);
+  color: var(--ink);
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--sage);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--sage-dark); }
+
+.site-header {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+.brand:hover { color: inherit; }
+.brand img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: block;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--label);
+  text-decoration: none;
+}
+.nav-link:hover { color: var(--sage); }
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+
+.hero {
+  background: var(--surface);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 40px 40px 36px;
+  margin-bottom: 20px;
+}
+
+.overline {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.lede {
+  margin: 0;
+  max-width: 42ch;
+  font-size: 17px;
+  color: var(--label);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.meta-note {
+  font-size: 13px;
+  color: var(--meta);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 28px 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 24px 26px;
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--label);
+}
+
+.prose {
+  background: var(--surface);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 32px 36px;
+  margin-bottom: 16px;
+}
+
+.prose h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.prose .updated {
+  margin: 0 0 28px;
+  font-size: 13px;
+  color: var(--meta);
+}
+
+.prose h2 {
+  margin: 28px 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.prose p, .prose li {
+  font-size: 15px;
+  color: var(--label);
+}
+
+.prose ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.prose li { margin-bottom: 6px; }
+
+.lang-label {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.site-footer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--meta);
+}
+
+.site-footer nav {
+  display: flex;
+  gap: 16px;
+}
+
+.site-footer a {
+  color: var(--label);
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-footer a:hover { color: var(--sage); }

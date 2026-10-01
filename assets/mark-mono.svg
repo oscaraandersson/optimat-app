@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Optimat mark mono">
+  <path d="M64.0 64.0 L64.0000 30.0000 A34.0 34.0 0 0 1 96.3359 53.4934 Z" fill="#165C45" stroke="#165C45" stroke-width="3.5"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="64.0" cy="64.0" r="37.0" fill="none" stroke="#165C45" stroke-width="6.0"/>
+  <!-- hub knockout for light backgrounds: draw nothing; consumers place on light surface -->
+</svg>
