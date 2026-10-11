@@ -20,7 +20,7 @@ assets/
   og.png                   1200×630 Open Graph image
   scan, pantry, recipe,    .webp + .jpg product screenshots, 720 px wide
   goal
-  share.webp / share.jpg   Sample share image (Saffranskyckling), 900 px wide
+  share.webp / share.jpg   Sample share image (Kvarg bowl med äpple), 900×1125
   fonts/                   noto-sans-latin.woff2, noto-sans-latin-ext.woff2
 docs/REVIEW.md             Critique of the previous site, written before this redesign
 tools/make-screens.py      Regenerates the phone screenshots from source PNGs
@@ -58,7 +58,7 @@ To mimic the GitHub Pages subpath, serve a parent directory that contains this r
 ## Design notes
 
 - Cardless. Structure comes from the type scale, whitespace, and hairlines (`--line`). The only container on the landing page is the dark green final call to action (`.final`). Phone frames are CSS only (`.phone`, scaled by `--w`).
-- Sections: header, hero (headline, store button, phone), four feature rows (`.row`; `.row.flip` alternates the side), an "Enkelt och privat" strip (`.facts`), the final call to action, and the footer.
+- Sections: header, hero (headline, store button, phone on the right), four feature rows, an "Enkelt och privat" strip (`.facts`), the final call to action, and the footer. From 900 px, `.row.flip` puts the image on the left. Rows 01 and 03 use it, so the first phone sits opposite the hero phone; rows 02 and 04 keep the image on the right. Below 900 px every row stacks the text above the image.
 - App Store buttons are text pills (`.btn`) with a small Apple glyph. They link to https://apps.apple.com/se/app/optimat/id6814617783. Apple's official "Download on the App Store" badge artwork is not included.
 - The page does not state a price in kronor. It says the app is a one-time purchase and that the current price is shown in the App Store.
 - Copy on the landing page is Swedish. The hero heading is an `h1`. Feature rows, the privacy strip, and the final call to action use `h2`.
