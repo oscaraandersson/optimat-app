@@ -3,72 +3,104 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Optimat — Recept &amp; skafferi, lokalt på din telefon</title>
-  <meta name="description" content="Optimat är en svensk, lokal-först recept- och skafferihanterare med makron och kostnad. Kärnan fungerar utan konto." />
-  <meta name="theme-color" content="#165C45" />
+  <title>Optimat — Recept efter pris och makron</title>
+  <meta name="description" content="Optimat är en iPhone-app där du skannar varor, bygger recept och ser pris och makron per portion. Ingen prenumeration, ingen inloggning." />
+  <meta name="theme-color" content="#F8F9FA" />
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preload" href="assets/fonts/noto-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="fonts.css" />
   <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <link rel="canonical" href="https://oscaraandersson.github.io/optimat-app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:site_name" content="Optimat" />
+  <meta property="og:title" content="Optimat — Recept efter pris och makron" />
+  <meta property="og:description" content="Skanna varor, bygg recept och se pris och makron per portion. Ingen prenumeration, ingen inloggning. För iPhone." />
+  <meta property="og:url" content="https://oscaraandersson.github.io/optimat-app/" />
+  <meta property="og:image" content="https://oscaraandersson.github.io/optimat-app/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Optimats märke och texten Optimat – Recept efter pris och makron" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Optimat — Recept efter pris och makron" />
+  <meta name="twitter:description" content="Skanna varor, bygg recept och se pris och makron per portion. För iPhone." />
+  <meta name="twitter:image" content="https://oscaraandersson.github.io/optimat-app/assets/og.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Optimat","operatingSystem":"iOS 15 eller senare","applicationCategory":"HealthApplication","url":"https://apps.apple.com/se/app/optimat/id6814617783","description":"Recept efter pris och makron."}</script>
+</head><body>
+  <a class="skip" href="#main">Hoppa till innehållet</a>
   <header class="site-header">
-    <a class="brand" href="index.html">
-      <img src="assets/mark.svg" width="36" height="36" alt="" />
-      Optimat
-    </a>
-    <a class="nav-link" href="privacy.html">Integritet</a>
+    <a class="brand" href="index.html"><img src="assets/mark.svg" width="34" height="34" alt="" />Optimat</a>
+    <nav class="nav" aria-label="Huvudmeny">
+      <a href="privacy.html">Integritet</a>
+      <a class="nav-store" href="https://apps.apple.com/se/app/optimat/id6814617783">Hämta i App Store</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="overline">Soft launch · Sverige</p>
-      <h1>Planera maten från ditt skafferi — med makron och pris.</h1>
-      <p class="lede">
-        Optimat är en lugn, lokal-först recept- och skafferihanterare för hemmakockar.
-        Bygg måltider från det du har, se energi och makron, och håll koll på kostnaden.
-      </p>
-      <div class="cta-row">
-        <span class="pill">Kommer snart</span>
-        <span class="meta-note">Kärnan fungerar utan konto · data stannar på enheten</span>
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="h">
+      <div class="hero-text">
+        <h1 id="h">Recept efter pris och makron</h1>
+        <p class="lede">Skanna varor, bygg recept och se vad varje portion kostar och ger i energi, protein, kolhydrater och fett.</p>
+        <div class="hero-cta">
+          <a class="btn " href="https://apps.apple.com/se/app/optimat/id6814617783"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.35-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.4 6.63 1.1 8.8.73 1.06 1.6 2.25 2.75 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.7.71 2.87.69 1.19-.02 1.94-1.08 2.66-2.15.84-1.23 1.19-2.42 1.2-2.48-.03-.01-2.3-.88-2.33-3.54zM14.2 6.1c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.55 1.31-.56.65-1.05 1.69-.92 2.69.97.07 1.97-.49 2.57-1.22z"/></svg>Hämta i App Store</a>
+          <p class="small">Ingen prenumeration. Ingen inloggning.<br>För iPhone, iOS 15 eller senare.</p>
+        </div>
       </div>
+      <div class="hero-phone"><div class="phone lg"><picture><source srcset="assets/recipe.webp" type="image/webp"><img  src="assets/recipe.jpg" width="720" height="1561" alt="Optimat på en iPhone: ett recept, kvarg bowl med äpple, med pris per portion, kcal och makron." fetchpriority="high"></picture></div></div>
     </section>
 
-    <section class="grid" aria-label="Fördelar">
-      <article class="card">
-        <h2>Lokal-först</h2>
-        <p>Skafferi och recept sparas på din telefon. Inget konto krävs för kärnfunktionerna.</p>
-      </article>
-      <article class="card">
-        <h2>Makron + kostnad</h2>
-        <p>Se kcal, protein, kolhydrater och fett tillsammans med ungefärligt pris per portion.</p>
-      </article>
-      <article class="card">
-        <h2>Sverige först</h2>
-        <p>Näringsdata från Livsmedelsverket och produktdata från Open Food Facts — byggd för svensk mat.</p>
-      </article>
-      <article class="card">
-        <h2>Skafferi → recept</h2>
-        <p>Skanna eller lägg till varor, koppla dem till recept och planera frukost, lunch, middag och mellanmål.</p>
-      </article>
+    <div class="wrap rows">
+      <section class="row" aria-labelledby="f1">
+        <div class="text"><p class="num">01</p><h2 id="f1">Skanna varor</h2>
+        <p class="body">Rikta kameran mot streckkoden så hittar Optimat produkten. Du kan också söka i Livsmedelsverkets svenska näringsdata och i Open Food Facts.</p></div>
+        <div class="media"><div class="phone"><picture><source srcset="assets/scan.webp" type="image/webp"><img  src="assets/scan.jpg" width="720" height="1561" alt="Skärmen Skanna streckkod i Optimat, med kameran riktad mot en yoghurtburk." loading="lazy" decoding="async"></picture></div></div>
+      </section>
+      <section class="row flip" aria-labelledby="f2">
+        <div class="text"><p class="num">02</p><h2 id="f2">Sortera skafferiet</h2>
+        <p class="body">Sortera varorna på pris, protein, fett eller namn. Se direkt vad ett gram protein kostar, med priser du lagt in själv.</p></div>
+        <div class="media"><div class="phone"><picture><source srcset="assets/pantry.webp" type="image/webp"><img  src="assets/pantry.jpg" width="720" height="1561" alt="Skafferiet i Optimat sorterat på protein, med pris per gram protein för varje vara." loading="lazy" decoding="async"></picture></div></div>
+      </section>
+      <section class="row" aria-labelledby="f3">
+        <div class="text"><p class="num">03</p><h2 id="f3">Bygg recept</h2>
+        <p class="body">Lägg till ingredienser och följ energi, protein, kolhydrater och fett per portion medan du bygger. Lägg in kostnad och se pris per portion. Sätt egna mål.</p>
+        <ul class="chips" aria-label="Näringsvärden per portion"><li class="c-e">Energi</li><li class="c-p">Protein</li><li class="c-k">Kolhydrater</li><li class="c-f">Fett</li></ul></div>
+        <div class="media"><div class="phone"><picture><source srcset="assets/goal.webp" type="image/webp"><img  src="assets/goal.jpg" width="720" height="1561" alt="Ett recept i Optimat med ingredienslista och egna mål för protein, kolhydrater och fett." loading="lazy" decoding="async"></picture></div></div>
+      </section>
+      <section class="row flip" aria-labelledby="f4">
+        <div class="text"><p class="num">04</p><h2 id="f4">Dela som bild</h2>
+        <p class="body">Dela receptet som en bild med foto, ingredienser, instruktioner, pris och makron per portion.</p></div>
+        <div class="media"><picture><source srcset="assets/share.webp" type="image/webp"><img class="share-img" src="assets/share.jpg" width="900" height="1125" alt="Exempel på en delad receptbild: Saffranskyckling med russin och ris, med pris, kcal och makron per portion, ingredienser och steg." loading="lazy" decoding="async"></picture></div>
+      </section>
+    </div>
+
+    <section class="wrap strip" aria-labelledby="priv">
+      <h2 id="priv">Enkelt och privat</h2>
+      <ul class="facts">
+        <li><h3>Sparas på din iPhone</h3><p>Recept och skafferi lagras lokalt. Appen samlar inte in några data.</p></li>
+        <li><h3>Inget konto</h3><p>Kärnfunktionerna kräver varken inloggning eller prenumeration.</p></li>
+        <li><h3>Engångspris</h3><p>Du köper appen en gång i App Store. Aktuellt pris visas där.</p></li>
+        <li><h3>Öppen data</h3><p>Näringsvärden från Livsmedelsverket och Open Food Facts. Priser lägger du in själv.</p></li>
+      </ul>
     </section>
 
-    <section class="card">
-      <h2>Vad Optimat inte är</h2>
-      <p>
-        Inte en kaloriräknare, inte medicinsk rådgivning och inte en synkad molntjänst.
-        En praktisk köksapp som hjälper dig laga mat utifrån skafferiet.
-      </p>
-    </section>
+    <div class="wrap">
+      <section class="final" aria-labelledby="cta">
+        <h2 id="cta">Hämta Optimat</h2>
+        <p>Recept efter pris och makron, på din iPhone.</p>
+        <a class="btn on-dark" href="https://apps.apple.com/se/app/optimat/id6814617783"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.35-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.4 6.63 1.1 8.8.73 1.06 1.6 2.25 2.75 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.7.71 2.87.69 1.19-.02 1.94-1.08 2.66-2.15.84-1.23 1.19-2.42 1.2-2.48-.03-.01-2.3-.88-2.33-3.54zM14.2 6.1c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.55 1.31-.56.65-1.05 1.69-.92 2.69.97.07 1.97-.49 2.57-1.22z"/></svg>Hämta i App Store</a>
+        <p class="small">Engångspris, ingen prenumeration. Priset visas i App Store.</p>
+      </section>
+    </div>
   </main>
-
   <footer class="site-footer">
-    <span>© Optimat</span>
     <nav aria-label="Sidfot">
-      <a href="index.html">Hem</a>
-      <a href="privacy.html">Integritet / Privacy</a>
+      <a href="https://apps.apple.com/se/app/optimat/id6814617783">App Store</a>
+      <a href="https://instagram.com/optimat.app">Instagram @optimat.app</a>
+      <a href="privacy.html">Integritet</a>
     </nav>
+    <span>© Optimat</span>
+    <p>Optimat är ingen kaloriräknare och ger inga medicinska råd.</p>
   </footer>
 </body>
 </html>
