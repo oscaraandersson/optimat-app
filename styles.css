@@ -80,12 +80,17 @@ h2{margin:0 0 14px;font-size:clamp(28px,4.4vw,38px);letter-spacing:-.03em;line-h
 .final h2{margin:0 0 12px;color:#fff}
 .final p{margin:0 0 28px;color:#CFE3DA;font-size:17px}
 .final .small{margin:18px 0 0;color:#B5D0C4}
+.final .small+.small{margin-top:10px}
+.final .small a{color:inherit}
+.final .small a:hover{color:#fff}
 
 /* footer */
 .site-footer{border-top:1px solid var(--line);max-width:var(--wrap);margin:0 auto;padding:28px 24px 48px;display:grid;gap:14px;font-size:14px;color:var(--meta)}
 .site-footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 .site-footer a{color:var(--label);text-decoration:none}.site-footer a:hover{text-decoration:underline}
 .site-footer a:hover{color:var(--sage)}
+.ig-link{display:inline-flex;align-items:center;gap:6px}
+.ig{display:block;flex:none}
 .site-footer p{margin:0;max-width:44em}
 
 /* privacy / prose (cardless) */
