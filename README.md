@@ -58,7 +58,7 @@ To mimic the GitHub Pages subpath, serve a parent directory that contains this r
 ## Design notes
 
 - Cardless. Structure comes from the type scale, whitespace, and hairlines (`--line`). The only container on the landing page is the dark green final call to action (`.final`). Phone frames are CSS only (`.phone`, scaled by `--w`).
-- Sections: header, hero (headline, store button, phone on the right), four feature rows, an "Enkelt och privat" strip (`.facts`), the final call to action, and the footer. From 900 px, `.row.flip` puts the image on the left. Rows 01 and 03 use it, so the first phone sits opposite the hero phone; rows 02 and 04 keep the image on the right. Below 900 px every row stacks the text above the image.
+- Sections: header, hero (headline, store button, phone on the right), five feature rows, a quiet "Källor" and "Inget konto" section (`.quiet`, hairlines, no cards), the final call to action, and the footer. From 900 px, `.row.flip` puts the image on the left. Rows 01, 03, and 05 use it (05 is text only: Exportera → Läs in). Rows 02 and 04 keep the image on the right. Below 900 px every row stacks the text above the image.
 - App Store buttons are text pills (`.btn`) with a small Apple glyph. They link to https://apps.apple.com/se/app/optimat/id6814617783. Apple's official "Download on the App Store" badge artwork is not included.
 - The page does not state a price in kronor. It says the app is a one-time purchase and that the current price is shown in the App Store.
 - Copy on the landing page is Swedish. The hero heading is an `h1`. Feature rows, the privacy strip, and the final call to action use `h2`.
